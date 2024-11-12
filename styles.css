@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(234, 224, 224);
+    
+}
+
+header {
+    font-size: 20px;
+    margin:auto;
+    align-items: center;
+    justify-items: center;
+    padding-right: 300px;
+    cursor:default;
+
+}
+
+
+
+#faq-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.section {
+    border-bottom: 1px solid white;
+
+}
+
+.title {
+    cursor: pointer;
+    padding: 50px;
+    font-weight: bold;
+    background-color: aqua;
+    color: black;
+
+}
+
+.title:hover {
+
+    filter: brightness(85%);
+
+}
+
+.description {
+    display: none;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    font-style: arial;
+}
+
+.title.active + .description {
+    display: block;
+}
+
+.title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .title .arrow {
+    margin-left: auto;
+    transition: transform 0.3s;
+
+  }
+  
+  .title.active .arrow {
+    transform: rotate(180deg);
+
+  }
+  
